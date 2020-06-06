@@ -47,8 +47,8 @@ public class DevelopersController {
 		newDeveloper.setEmail(email);
 		newDeveloper.setFirstName(firstName);
 		newDeveloper.setLastName(lastName);
-		developerService.save(newDeveloper);
-
+		
+		newDeveloper = developerService.save(newDeveloper);		
 		model.addAttribute("developer", newDeveloper);
 		model.addAttribute("skills", skillService.findAll());
 		return "redirect:/developer/" + newDeveloper.getId();
@@ -63,7 +63,8 @@ public class DevelopersController {
 			if (!developer.hasSkill(skill)) {
 				developer.getSkills().add(skill);
 			}
-			developerService.save(developer);
+			System.out.println("PROBANDO....");
+			developer = developerService.save(developer);
 			model.addAttribute("developer", developerService.findById(id));
 			model.addAttribute("skills", skillService.findAll());
 			return "redirect:/developer/" + developer.getId();

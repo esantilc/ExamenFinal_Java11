@@ -26,8 +26,8 @@ public class DeveloperServiceImpl implements DeveloperService {
 	}
 
 	@Override
-	public void save(Developer developer) {
-		proxy.save(developer);
+	public Developer save(Developer developer) {
+		return proxy.save(developer);
 		
 	}
 

@@ -21,5 +21,5 @@ public interface DeveloperServiceProxy {
 	public Developer findById(@PathVariable Long id);
 	
 	@PostMapping("/save")
-	public void save(@RequestBody Developer developer);
+	public Developer save(@RequestBody Developer developer);
 }

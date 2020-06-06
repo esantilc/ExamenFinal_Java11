@@ -10,5 +10,5 @@ public interface DeveloperService {
 
 	List<Developer> findAll();
 
-	void save(Developer developer);
+	Developer save(Developer developer);
 }
