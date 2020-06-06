@@ -1,15 +1,13 @@
 package com.developerservice.demo.entidad;
 
-import java.util.List;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToMany;
-
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "developer")
 public class Developer {
 
 	@Id
@@ -18,8 +16,6 @@ public class Developer {
 	private String firstName;
 	private String lastName;
 	private String email;
-	@ManyToMany
-	private List<Skill> skills;
 	
 	public long getId() {
 		return id;
@@ -45,30 +41,13 @@ public class Developer {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public List<Skill> getSkills() {
-		return skills;
-	}
-	public void setSkills(List<Skill> skills) {
-		this.skills = skills;
-	}
 	
 	public Developer() {
 		// TODO Auto-generated constructor stub
 	}
-	public Developer(String firstName, String lastName, String email, List<Skill> skills) {
+	public Developer(String firstName, String lastName, String email) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
-		this.skills = skills;
 	}
-	
-	public boolean hasSkill(Skill skill) {
-		for (Skill containedSkill: getSkills()) {
-			if (containedSkill.getId() == skill.getId()) {
-				return true;
-			}
-		}
-		return false;
-	}
-
 }

@@ -8,8 +8,8 @@
 		<version>2.3.0.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.developer-service</groupId>
-	<artifactId>developer-service</artifactId>
+	<groupId>com.developer-skill-service</groupId>
+	<artifactId>developer-skill-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>developer-service</name>
 	<description>Demo project for Spring Boot</description>
@@ -53,14 +53,20 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-config</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>
 				spring-cloud-starter-netflix-eureka-client
 			</artifactId>
 		</dependency>
-		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>
