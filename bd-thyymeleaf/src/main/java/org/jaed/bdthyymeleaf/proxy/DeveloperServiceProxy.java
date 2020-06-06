@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-@FeignClient(name="developer-service", url = "localhost:8087")
+@FeignClient(name="developer-service", url = "localhost:8166")
 public interface DeveloperServiceProxy {
 
 	@GetMapping("/developers")

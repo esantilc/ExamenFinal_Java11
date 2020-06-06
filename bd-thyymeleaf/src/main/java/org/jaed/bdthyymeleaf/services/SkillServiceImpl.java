@@ -5,7 +5,9 @@ import java.util.List;
 import org.jaed.bdthyymeleaf.model.Skill;
 import org.jaed.bdthyymeleaf.proxy.SkillServiceProxy;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class SkillServiceImpl implements SkillService {
 
 	@Autowired
