@@ -1,16 +1,17 @@
-package org.jaed.bdthyymeleaf;
+package com.developerservice.demo;
 
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
-import org.jaed.bdthyymeleaf.entidad.Developer;
-import org.jaed.bdthyymeleaf.entidad.Skill;
-import org.jaed.bdthyymeleaf.repository.DeveloperRepository;
-import org.jaed.bdthyymeleaf.repository.SkillRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
+
+import com.developerservice.demo.entidad.Developer;
+import com.developerservice.demo.entidad.Skill;
+import com.developerservice.demo.modelo.DeveloperRepository;
+import com.developerservice.demo.modelo.SkillRepository;
 
 
 //@Component
@@ -25,7 +26,7 @@ public class DeveloperLineRunner implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		// TODO Auto-generated method stub
-		Skill javascript = new Skill("javascript", "Javascript language skill");
+		/*Skill javascript = new Skill("javascript", "Javascript language skill");
 		Skill ruby = new Skill("ruby", "Ruby language skill");
 		Skill emberjs = new Skill("emberjs", "Emberjs framework");
 		Skill angularjs = new Skill("angularjs", "Angularjs framework");
@@ -46,7 +47,7 @@ public class DeveloperLineRunner implements CommandLineRunner {
 				Arrays.asList(new Skill[] { emberjs, angularjs, javascript })));
 		developers.add(new Developer("Bob", "Brown", "brown@example.com", 
 				Arrays.asList(new Skill[] { emberjs })));
-		developerRepository.saveAll(developers);
+		developerRepository.saveAll(developers);*/
 
 	}
 
