@@ -9,19 +9,17 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 
-@Entity
 public class Developer implements Serializable {	
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+
 	private long id;
 	private String firstName;
 	private String lastName;
 	private String email;
-	@ManyToMany
+	
 	private List<Skill> skills;
 	
 	public long getId() {
