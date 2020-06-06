@@ -2,7 +2,7 @@ package org.jaed.bdthyymeleaf.services;
 
 import java.util.List;
 
-import org.jaed.bdthyymeleaf.entidad.Skill;
+import org.jaed.bdthyymeleaf.model.Skill;
 import org.jaed.bdthyymeleaf.proxy.SkillServiceProxy;
 import org.springframework.beans.factory.annotation.Autowired;
 

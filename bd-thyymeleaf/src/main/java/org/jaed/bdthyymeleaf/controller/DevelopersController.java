@@ -1,7 +1,7 @@
 package org.jaed.bdthyymeleaf.controller;
 
-import org.jaed.bdthyymeleaf.entidad.Developer;
-import org.jaed.bdthyymeleaf.entidad.Skill;
+import org.jaed.bdthyymeleaf.model.Developer;
+import org.jaed.bdthyymeleaf.model.Skill;
 import org.jaed.bdthyymeleaf.services.DeveloperService;
 import org.jaed.bdthyymeleaf.services.SkillService;
 import org.springframework.beans.factory.annotation.Autowired;

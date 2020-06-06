@@ -1,4 +1,4 @@
-package org.jaed.bdthyymeleaf.entidad;
+package org.jaed.bdthyymeleaf.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
