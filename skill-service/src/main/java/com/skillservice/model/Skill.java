@@ -1,4 +1,4 @@
-package org.jaed.bdthyymeleaf.entidad;
+package com.skillservice.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -8,6 +8,9 @@ import javax.persistence.Id;
 @Entity
 public class Skill {
 
+	/**
+	 * 
+	 */
 	@Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private long id;
@@ -44,7 +47,5 @@ public class Skill {
 		// TODO Auto-generated method stub
 		return this.getId()+" "+this.getLabel()+" "+this.getDescription();
 	}
-	
-	
     
 }

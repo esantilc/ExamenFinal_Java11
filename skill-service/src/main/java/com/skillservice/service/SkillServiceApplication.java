@@ -1,4 +1,4 @@
-package com.skillservice.demo;
+package com.skillservice.service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,5 +9,4 @@ public class SkillServiceApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SkillServiceApplication.class, args);
 	}
-
 }

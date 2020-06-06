@@ -1,4 +1,4 @@
-package org.jaed.bdthyymeleaf.entidad;
+package org.jaed.bdthyymeleaf.model;
 
 import java.util.List;
 
